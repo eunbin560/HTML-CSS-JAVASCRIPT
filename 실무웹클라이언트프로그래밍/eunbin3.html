@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>팝업창 예제</title>
+</head>
+<body>
+    <button onclick="openPopup()">팝업창 열기</button>
+
+    <script>
+        function openPopup() {
+            
+            const url = 'about:blank';
+            const name = '팝업창 열기';
+            const specs = 'width=600,height=400';
+
+            window.open(url, name, specs);
+        }
+    </script>
+</body>
+</html>

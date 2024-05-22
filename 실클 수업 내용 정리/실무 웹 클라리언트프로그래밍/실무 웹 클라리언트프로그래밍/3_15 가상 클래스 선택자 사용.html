@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:last-of-type</title>
+    <!--last-of-type는 특정 유형(태그 이름)의 형제 요소들 중에서 그 유형을 기준으로 마지막에 위치하는 요소를 선택합니다.-->
+    <style>
+        p:last-of-type{
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <span>span 0</span>
+        <p>lorem 0</p>
+        <div>
+            <p>lorem 1</p>
+            <p>lorem 2</p>
+            <span>span 1</span>
+        </div>
+        <div>
+            <span>span 2</span>
+            <p>lorem 3</p>
+            <p>lorem 4</p>
+            <span>span 3</span>
+        </div>
+    </body>
+    </html>

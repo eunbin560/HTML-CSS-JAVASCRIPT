@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachment-fixed</title>
+<style>
+    body{
+        height: 1000px;
+    }
+    .parent{
+        width: 500px;
+        height: 360px;
+        border: 1px solid black;
+        overflow: scroll;
+    }
+    .children{
+        height: 2000px;
+        background-image: url('6_coffee1.jpg'); 
+        background-attachment:fixed;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="children"></div>
+    </div>
+</body>
+</html>

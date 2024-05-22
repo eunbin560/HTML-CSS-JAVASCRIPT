@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top,bottom 둘 중 하나 이용하여 초록색 도형 이동</title>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+    .red-box{
+        background-color: red;
+        position: absolute;
+    }
+    .green-box{
+        background-color: green;
+        position: relative;
+        left: 100px;
+    }
+    .blue-box{
+        background-color: blue;
+        margin-top: 100px;
+    }
+</style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

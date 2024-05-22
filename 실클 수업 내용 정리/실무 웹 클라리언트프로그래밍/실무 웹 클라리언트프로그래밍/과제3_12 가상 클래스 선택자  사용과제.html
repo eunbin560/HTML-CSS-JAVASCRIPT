@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-of-type(n) span3 파란색</title>
+    <!--nth-of-type(n) 특정 유형(태그 이름)의 형제 요소들 중에서 그 유형을 기준으로 n번째 위치하는 요소들을 선택합니다.
+    즉, 여기선 특정 태그 p의 각각 2번째-->
+    <style>
+        span:nth-of-type(2){
+            color: blue;
+        }
+    </style>
+    </head>
+    <body>
+        <p>lorem 0</p>
+        <div>
+            <p>lorem 1</p>
+            <span>span 1</span>
+            <p>lorem 2</p>
+        </div>
+        <div>
+            <p>lorem 3</p>
+            <span>span 2</span>
+            <span>span 3</span>
+            <p>lorem 4</p>
+        </div>
+    </body>
+    </html>

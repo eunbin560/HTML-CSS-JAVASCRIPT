@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240526 과제</title>
+</head>
+<body>
+  <button onclick="popup()">팝업창 열기</button>
+  <script>
+    function popup(){
+      var _width=450;
+      var _height=300;
+      var _left=(window.screen.width-450)/2;
+      var _top=(window.screen.height-300)/2;
+      window.open('popup.html','팝업창 열기','width='+_width+',height='+_height+',left='+_left+',top='+_top);
+    }
+  </script>
+</body>
+</html>

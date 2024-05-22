@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:first-of-type</title>
+    <!--first-of-type는 형제 요소 중 자신의 유형과 일치하는 제일 첫 요소를 나타냅니다.-->
+    <style>
+        p:first-of-type{
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <span>span 0</span>
+        <p>lorem 0</p>
+        <div>
+            <span>span 1</span>
+            <p>lorem 1</p>
+            <p>lorem 2</p>
+        </div>
+        <div>
+            <span>span 2</span>
+            <span>span 3</span>
+            <p>lorem 3</p>
+            <p>lorem 4</p>
+        </div>
+    </body>
+    </html>

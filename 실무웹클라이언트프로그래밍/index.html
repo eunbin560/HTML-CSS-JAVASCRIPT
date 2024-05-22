@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>popup</title>
+  <style>
+    .red-color {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+  <img src="Good.jpg">
+  <script>
+    // 시간을 표시하고 색상을 변경하는 함수
+    function displayTime() {
+      // 현재 시간을 가져옴
+      var date = new Date();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var seconds = date.getSeconds();
+      // 시간을 00:00:00 형식으로 포맷팅
+      var timeString = ('0' + hours).slice(-2) + ':' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2);
+      // clock div 업데이트
+      var clockDiv = document.getElementById('clock');
+      clockDiv.textContent = timeString;
+
+      // 시간이 짝수 초일 때 클래스를 추가하여 텍스트 색상 변경
+      if (seconds % 2 === 0) {
+        clockDiv.classList.add('red-color');
+      } else {
+        clockDiv.classList.remove('red-color');
+      }
+    }
+
+    // displayTime 함수를 1초마다 호출하여 시간을 업데이트
+    setInterval(displayTime, 1000);
+  </script>
+</body>
+</html>
